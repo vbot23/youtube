@@ -1,0 +1,29 @@
+<div class='container'>
+  <div class="page-header">
+    <p *ngIf="loading">loading....</p>
+    <div class="row">
+      <div class="col-md-4 ">
+        <h2>
+          YouTube Search
+          <!--<img-->
+          <!--style="float: right;"-->
+          <!--*ngIf="loading"-->
+          <!--src='${loadingGif}' />-->
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <div class="col-md-12">
+        <app-search (loading)="loading = $event" (results)="updateResults($event)">
+        </app-search>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <app-search-result *ngFor="let result of results" [result]="result">
+    </app-search-result>
+  </div>
+</div>
