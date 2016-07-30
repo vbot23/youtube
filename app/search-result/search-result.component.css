@@ -4,5 +4,9 @@
   width: 240px;
   height: 400px;
   overflow: auto;
-  font-family: Lato;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
 }
+.title {
+  font-weight: bold;
+}
+
