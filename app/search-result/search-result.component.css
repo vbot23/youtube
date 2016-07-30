@@ -1,0 +1,8 @@
+.thumbnail {
+  background-color: cornsilk;
+  margin-top: 40px;
+  width: 240px;
+  height: 400px;
+  overflow: auto;
+  font-family: Lato;
+}
