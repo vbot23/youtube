@@ -25,7 +25,7 @@ export class AppComponent {
               private http:Http) {}
   updateResults(results: SearchResult[]) {
     this.results = results;
-    console.log(results);
+    // console.log(results);
   }
   // search() {
   //   console.log(this.apiKey);

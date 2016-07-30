@@ -1,16 +1,28 @@
-<div class='container'>
-  <div class="page-header">
-    <h1>YouTube Search
-      <!--<img-->
-        <!--style="float: right;"-->
-        <!--*ngIf="loading"-->
-        <!--src='${loadingGif}' />-->
-    </h1>
-    <p *ngIf="loading">loading....</p>
+<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Youtuber</a>
+    </div>
   </div>
+</nav>
+<div class='container'>
+  <!--<div class="page-header">-->
+    <!--<p class="loading" *ngIf="loading">loading....</p>-->
+    <!--<div class="row">-->
+      <!--<div class="col-md-4 ">-->
+        <!--&lt;!&ndash;<h2>&ndash;&gt;-->
+          <!--&lt;!&ndash;YouTube Search&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;<img&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;style="float: right;"&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;*ngIf="loading"&ndash;&gt;&ndash;&gt;-->
+          <!--&lt;!&ndash;&lt;!&ndash;src='${loadingGif}' />&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;</h2>&ndash;&gt;-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
-      <div class="input-group input-group-lg col-md-12">
+      <div class="col-md-12">
         <app-search (loading)="loading = $event" (results)="updateResults($event)">
         </app-search>
       </div>
